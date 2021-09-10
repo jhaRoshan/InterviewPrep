@@ -1,4 +1,7 @@
-package com.roshan.graph.digraph;
+package com.roshan.graph.topological.sort;
+
+import com.roshan.graph.cycle.DetectCycleInDirectedGraph;
+import com.roshan.graph.digraph.DirectedGraph;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +20,7 @@ public class TopologicalSort {
 
 	public List<Integer> getTopologicalSort(){
 		
-		DetectCycle dc = new DetectCycle(dg);
+		DetectCycleInDirectedGraph dc = new DetectCycleInDirectedGraph(dg);
 		if(dc.hasCycle()) {
 			return null;
 		}
@@ -48,5 +51,22 @@ public class TopologicalSort {
 		}
 		stack.push(i);
 	}
-	
+
+
+
+
+	//main
+	public static void main(String[] args) {
+
+		DirectedGraph dg = new DirectedGraph(6);
+		dg.addEdge(5, 2);
+		dg.addEdge(5, 0);
+		dg.addEdge(4, 0);
+		dg.addEdge(4, 1);
+		dg.addEdge(2, 3);
+		dg.addEdge(3, 1);
+
+		TopologicalSort tsSort = new TopologicalSort(dg);
+		System.out.println(tsSort.getTopologicalSort());
+	}
 }

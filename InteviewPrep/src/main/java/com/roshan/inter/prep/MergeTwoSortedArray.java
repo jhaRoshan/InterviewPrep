@@ -6,7 +6,8 @@ public class MergeTwoSortedArray {
 
 	
 	public static void mergeTwoSortedArray(int arr1[] , int arr2[]) {
-		
+
+
 		int arr1Len = arr1.length;
 		int arr2Len = arr2.length;
 		

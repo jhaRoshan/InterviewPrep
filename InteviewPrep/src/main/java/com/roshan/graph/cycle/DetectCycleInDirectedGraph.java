@@ -1,13 +1,15 @@
-package com.roshan.graph.digraph;
+package com.roshan.graph.cycle;
+
+import com.roshan.graph.digraph.DirectedGraph;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class DetectCycle {
+public class DetectCycleInDirectedGraph {
 
 	private DirectedGraph dg;
 
-	public DetectCycle(DirectedGraph dg) {
+	public DetectCycleInDirectedGraph(DirectedGraph dg) {
 		super();
 		this.dg = dg;
 	}
@@ -49,5 +51,24 @@ public class DetectCycle {
 		recTree.remove(i);
 		
 		return false;
+	}
+
+
+	//main
+	public static void main(String[] args) {
+
+		DirectedGraph dg = new DirectedGraph(6);
+		dg.addEdge(5, 2);
+		dg.addEdge(5, 0);
+		dg.addEdge(4, 0);
+		dg.addEdge(4, 1);
+		dg.addEdge(2, 3);
+		dg.addEdge(3, 1);
+
+		DetectCycleInDirectedGraph dc = new DetectCycleInDirectedGraph(dg);
+		System.out.println(dc.hasCycle());
+
+
+
 	}
 }

@@ -8,14 +8,11 @@ public class CoinChangeProblem {
 			return 1;
 		}
 		
-		if(val < 0 || (val > 0 && index <0)) {
+		if(val < 0 || index <0) {
 			return 0;
 		}
 		
-		if(index < 0) {
-			return 0;
-		}
-		
+
 		
 		return getWaysRec(coin , val , index-1) + 
 				getWaysRec(coin , val - coin[index] , index);
@@ -38,11 +35,12 @@ public class CoinChangeProblem {
 	
 	
 	public static void main(String[] args) {
-		int arr[] = {1, 2}; 
+		int arr[] = {1, 2 , 5};
+		int val = 8;
 
-//		System.out.println( getWaysRec(arr, 4, 2)); 
+		System.out.println( getWaysRec(arr, val, arr.length-1));
         
-        System.out.println( getWaysDP(arr, 4)); 
+        System.out.println( getWaysDP(arr, val));
 
 	}
 

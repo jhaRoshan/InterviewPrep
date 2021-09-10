@@ -1,6 +1,8 @@
 package com.roshan.heap;
 
 
+import java.util.Collections;
+import java.util.PriorityQueue;
 
 public class IntegerStreamMedian {
 
@@ -53,8 +55,6 @@ public class IntegerStreamMedian {
 		
 		
 	}
-	
-	
 	
 	
 }
