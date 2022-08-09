@@ -32,8 +32,8 @@ public class MaxProfit {
 		getMaxprofit(price);
 		
 		
-		int[] price1 = {2,5,7,1,4,3,1,3};
-		getMaxprofit(price1);
+//		int[] price1 = {2,5,7,1,4,3,1,3};
+//		getMaxprofit(price1);
 	}
 
 }

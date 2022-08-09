@@ -1,4 +1,4 @@
-package com.roshan.dp;
+package com.roshan.dp.lcs;
 
 public class LongestCommonSubsequence {
 

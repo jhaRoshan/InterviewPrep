@@ -1,12 +1,17 @@
 package com.roshan.dp;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LongestIncreasingSubsequence {
 
     /**
      * DP way of solving LIS
      */
     public int longestSubsequenceWithActualSolution(int arr[]){
+
+
         int T[] = new int[arr.length];
         int actualSolution[] = new int[arr.length];
         

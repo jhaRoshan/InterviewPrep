@@ -1,4 +1,4 @@
-package com.roshan.dp;
+package com.roshan.dp.knapsack;
 
 import java.util.Arrays;
 
@@ -12,10 +12,8 @@ public class KnapsackProblem {
 		if (wt[n - 1] > w) {
 			return getMaxValRec(val, wt, w, n - 1);
 		} else {
-
 			return Math.max(val[n - 1] + getMaxValRec(val, wt, w - wt[n - 1], n - 1), getMaxValRec(val, wt, w, n - 1));
 		}
-
 	}
 
 	public static int getMaxValDP(int[] val, int[] wt, int W, int n) {
@@ -36,13 +34,16 @@ public class KnapsackProblem {
 	}
 
 	public static void main(String[] args) {
-		int val[] = new int[] { 6, 10, 12 };
-		int wt[] = new int[] { 1, 2, 3 };
+		int val[] = new int[]{6, 10, 12};
+		int wt[] = new int[]{1, 2, 3};
 		int W = 5;
 		int n = val.length;
+
 		System.out.println(getMaxValRec(val, wt, W, n));
 
 		System.out.println(getMaxValDP(val, wt, W, n));
 	}
-
 }
+
+
+

@@ -24,6 +24,9 @@ dependencies {
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation 'com.google.guava:guava:27.0.1-jre'
 
+    // https://mvnrepository.com/artifact/org.isomorphism/token-bucket
+    implementation group: 'org.isomorphism', name: 'token-bucket', version: '1.7'
+
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
 }

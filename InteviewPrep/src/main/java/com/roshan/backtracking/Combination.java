@@ -20,6 +20,7 @@ public class Combination {
 
 		if(temp.size() == size) {
 			retVal.add(new ArrayList<Integer>(temp));
+			System.out.println(i);
 			return;
 		}
 		
@@ -32,7 +33,7 @@ public class Combination {
 
 	public static void main(String[] args) {
 
-		List<Integer> list = Arrays.asList(1,2,3,4,5);
+		List<Integer> list = Arrays.asList(1,2,3,4);
 		List<List<Integer>> subset = getCombination(list , 2);
 		System.out.println(subset);
 	}

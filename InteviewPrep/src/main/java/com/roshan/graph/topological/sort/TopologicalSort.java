@@ -66,6 +66,9 @@ public class TopologicalSort {
 		dg.addEdge(2, 3);
 		dg.addEdge(3, 1);
 
+		//add this to form cycle
+		dg.addEdge(3, 5);
+
 		TopologicalSort tsSort = new TopologicalSort(dg);
 		System.out.println(tsSort.getTopologicalSort());
 	}
