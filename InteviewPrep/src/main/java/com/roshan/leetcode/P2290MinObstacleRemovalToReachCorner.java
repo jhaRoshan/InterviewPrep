@@ -1,8 +1,12 @@
-package com.roshan.test;
+package com.roshan.leetcode;
 
-import java.util.*;
+import com.roshan.test.Solution;
 
-public class Solution {
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
+
+public class P2290MinObstacleRemovalToReachCorner {
 
     int[][] d = new int[][]{{0,1},{0,-1},{1,0},{-1,0}};
 
@@ -41,7 +45,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution s = new Solution();
+        P2290MinObstacleRemovalToReachCorner s = new P2290MinObstacleRemovalToReachCorner();
         int[][] arr1 = {{0,1,1},{1,1,0},{1,1,0}};
         System.out.println(s.minimumObstacles(arr1));
     }

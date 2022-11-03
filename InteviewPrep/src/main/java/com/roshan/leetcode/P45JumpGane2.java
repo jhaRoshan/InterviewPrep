@@ -38,14 +38,17 @@ public class P45JumpGane2 {
     public static void main(String[] args) {
 
 //        System.out.println(jump(new int[]{2,3,0,1,4}));
-//        System.out.println(jump2(new int[]{2,3,0,1,4}));
+        System.out.println(jump2(new int[]{2,3,0,1,4}));
+        System.out.println(jump2(new int[]{3,1,5,6,7,8}));
+
+
 
 //        System.out.println("-----");
 //        System.out.println(jump(new int[]{2,0,0}));
-//        System.out.println(jump2(new int[]{2,0,0}));
+        System.out.println(jump2(new int[]{2,0,0}));
 //
 //        System.out.println("-----");
-        System.out.println(jump(new int[]{1,0,0})); //this has some problem
+//        System.out.println(jump(new int[]{1,0,0})); //this has some problem
         System.out.println(jump2(new int[]{1,0,0}));
     }
 

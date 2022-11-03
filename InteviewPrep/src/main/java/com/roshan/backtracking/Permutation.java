@@ -6,6 +6,9 @@ import java.util.List;
 public class Permutation {
 
 	public static ArrayList<ArrayList<Integer>> permute(int[] numbers) {
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Integer.MIN_VALUE);
+
 		ArrayList<ArrayList<Integer>> permutations = new ArrayList<>();
 		permutations.add(new ArrayList<Integer>());
 

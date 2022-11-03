@@ -74,7 +74,7 @@ public class KahnTopologicalSort {
         dg.addEdge(3, 1);
 
         //add this to form cycle
-        dg.addEdge(3, 5);
+//        dg.addEdge(3, 5);
 
         KahnTopologicalSort tsSort = new KahnTopologicalSort(dg);
         System.out.println(tsSort.getTopologicalSort());

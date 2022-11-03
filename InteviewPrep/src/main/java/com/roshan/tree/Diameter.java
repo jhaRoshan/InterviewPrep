@@ -2,6 +2,7 @@ package com.roshan.tree;
 
 public class Diameter {
 
+	private static int diameter = 0;
 	public static int getDiameter(Node root) {
 		
 		Height h = new Height();
@@ -26,6 +27,19 @@ public class Diameter {
 		
 		return Math.max(lh.height+rh.height+1 , Math.max(ld, rd));
 		
+	}
+
+
+	private static int getDiameter2(Node root){
+
+		if(root == null) return 0;
+
+		int left = getDiameter2(root.left);
+		int right = getDiameter2(root.right);
+
+		diameter = Math.max(diameter  , 1+ left+right);
+		return 1+ Math.max(left,right);
+
 	}
 
 	public static void main(String[] args) {
@@ -55,6 +69,8 @@ public class Diameter {
 		
 		
 		System.out.println(getDiameter(n1));
+		getDiameter2(n1);
+		System.out.println(diameter);
 		
 	}
 

@@ -1,6 +1,6 @@
 package com.roshan.inter.prep;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class MergeTwoSortedArray {
 
@@ -33,14 +33,20 @@ public class MergeTwoSortedArray {
 	
 	
 	public static void main(String[] args) {
-		int arr1[] = new int[]{1, 5, 9, 10, 15, 20}; 
+		int arr1[] = new int[]{1, 5, 9, 10, 15, 20};
 	    int arr2[] = new int[]{2, 3, 8, 13};
-	    
+
 	    mergeTwoSortedArray(arr1, arr2);
-	    
+
 	    System.out.println(Arrays.toString(arr1));
 	    System.out.println(Arrays.toString(arr2));
-	    
+
+
+
+
+
+
+
 	}
 
 }
